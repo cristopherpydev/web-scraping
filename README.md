@@ -26,6 +26,7 @@ Algunos usos comunes incluyen:
 
 * Seguimiento de tendencias (por ejemplo, libros más vendidos o productos con mayor demanda).
 
+* Automatización de informes que integran datos actualizados desde la web.
 
 ## Fases que implican al proceso de web scraping
 
@@ -46,5 +47,33 @@ Los datos se guardan en un formato estructurado, por ejemplo .csv, .json o direc
 5. Procesamiento y análisis:
 Una vez obtenidos los datos, se pueden aplicar técnicas de limpieza, transformación y visualización para extraer conclusiones relevantes.
 
-* Automatización de informes que integran datos actualizados desde la web.
 
+# Preparando el entorno de trabajo
+
+## Instalación de librerías utilizadas en el proyecto
+
+Primero utilizaremos la librería Beautifulsoup4, que la podemos instalar en nuestra terminal utilizando el comando: 
+```
+pip install beautifulsoup4
+```
+
+Una vez descargada, deberíamos descargar también pandas, una librería para dar reorganizar nuestros datos y limpiarlos. Nuevamente:
+```
+pip install pandas
+```
+
+También utilizaremos la librería matplotlib, pero normalmente ya viene instalada por defecto. Esta librería la usaremos para crear gráficos de nuestros datos.
+
+## Estructura de proyecto
+
+La idea es crearnos un directorio que se llame de alguna manera simbólica, como "proyecto" o "scraping". Esto no importa mucho, pero a partir de aquí si importa el orden de nuestros archivos y subdirectorios contenidos. 
+
+1. Nos crearemos primero un script de python llamado scraping.py. Este programa será el encargado de realizar la petición HTTP a la página target, recopilar y parsear la información deseada. La información "en sucio" la dumpearemos en un archivo .json.
+2. Luego necesitamos crear otro script de python llamado limpiar_datos.py. Este programa utilizará la librería de pandas para limpiar y formatear caracteres especiales y otras consideraciones del archivo .json anterior a otros formatos más legibles (numéricos,...). Al acabar, dumpeará la información a otro archivo .json definitivo con la información ya limpia.
+3. Por último necesitamos crear otro script de python llamado analiticas.py. Este programa utilizará la librería de matplotlib para generar un informe a varias cuestiones que se plantean a lo largo de este proyecto. Para generar el informe empleará el archivo .json definitivo.
+
+Podemos utilizar una estructura de subdirectorios si se desea. ¡Queda mucho más limpio, y eso en el mundo de la programación es un diez! 
+
+# ¿Cómo planteé el desarrollo del proyecto?
+
+blablabla
