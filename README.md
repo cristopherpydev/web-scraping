@@ -76,4 +76,12 @@ Podemos utilizar una estructura de subdirectorios si se desea. ¡Queda mucho má
 
 # ¿Cómo planteé el desarrollo del proyecto?
 
-blablabla
+## Enunciado
+
+Nuestra empresa FICTICIA S.A. nos ha pedido que analicemos su ecommerce de libros. Como se está acercando Halloween nos ha pedido que hagamos un análisis de datos sobre los libros de la categoría Horror en su página web. Para ello debemos trabajar de manera eficiente en busca de respuestas claras a las siguientes preguntas:
+
+* ¿Cuál es el libro más caro de todos?
+* ¿Cuál de ellos es el menos popular por diferencia?
+* ¿Cuál de ellos es el más barato?
+* ¿Qué libros están agotados?
+  
